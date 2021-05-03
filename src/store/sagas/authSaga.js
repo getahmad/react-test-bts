@@ -8,7 +8,7 @@ function* login(actions) {
   console.log(payload);
   try {
     const res = yield axios.post(`${baseUrl}/login`, payload);
-    console.log(res);
+    // console.log(res);
     localStorage.setItem("token", res.data.data.token);
     yield put({ type: AUTH_SUCCESS });
   } catch (e) {

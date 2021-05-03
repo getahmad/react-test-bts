@@ -8,7 +8,6 @@ export const loginAuth = (user) => {
 };
 
 export const registerAuth = (user) => {
-  console.log(user);
   return {
     type: REGISTER,
     payload: user,
